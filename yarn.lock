@@ -924,14 +924,14 @@
     webpack "^4.0.0"
     yorkie "^2.0.0"
 
-"@vue/cli-plugin-router@4.1.1", "@vue/cli-plugin-router@^4.1.1":
+"@vue/cli-plugin-router@^4.1.1":
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/@vue/cli-plugin-router/-/cli-plugin-router-4.1.1.tgz#85c7f2d34f9217ad70b49a71dae6bf7067042759"
   integrity sha512-n2L2LPLnNcCeeVwJUrbRexi/coBnexIZorRTihinIkUzv3J+Qiw0KPsGjg1RF6UrieFlRhqcY3a5GloC+L0SBQ==
   dependencies:
     "@vue/cli-shared-utils" "^4.1.1"
 
-"@vue/cli-plugin-vuex@4.1.1", "@vue/cli-plugin-vuex@^4.1.1":
+"@vue/cli-plugin-vuex@^4.1.1":
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/@vue/cli-plugin-vuex/-/cli-plugin-vuex-4.1.1.tgz#81908ee66370dda162b5517afc869f91d3abe2bf"
   integrity sha512-AkK+FCrghjcyxUgfJyxpSuyJ0w9FSlwQEZv7+aRhs9j+YguROdjKA8DDTp8Ve1yboALeNMRv8eXApQEVC3xFQA==
@@ -7967,6 +7967,11 @@ vue@^2.6.10:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
   integrity sha512-VfPwgcGABbGAue9+sfrD4PuwFar7gPb1yl1UK1MwXoQPAw0BKSqWfoYCT/ThFrdEVWoI51dBuyCoiNU9bZDZxQ==
+
+vuex-router-sync@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/vuex-router-sync/-/vuex-router-sync-5.0.0.tgz#1a225c17a1dd9e2f74af0a1b2c62072e9492b305"
+  integrity sha512-Mry2sO4kiAG64714X1CFpTA/shUH1DmkZ26DFDtwoM/yyx6OtMrc+MxrU+7vvbNLO9LSpgwkiJ8W+rlmRtsM+w==
 
 vuex@^3.1.2:
   version "3.1.2"
