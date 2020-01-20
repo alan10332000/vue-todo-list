@@ -1,12 +1,12 @@
 <template>
   <div class="todoInput">
     <input
+      v-model.trim="todo"
+      v-focus
       type="text"
       placeholder="請輸入待辦事項"
-      v-model.trim="todo"
       @keyup.enter="submitHandler"
-      v-focus
-    />
+    >
   </div>
 </template>
 
