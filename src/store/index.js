@@ -5,10 +5,10 @@ Vue.use(Vuex)
 
 const LS = {
   load () {
-    return JSON.parse(localStorage.getItem('vue-todo') || '[]')
+    return JSON.parse(localStorage.getItem('vue-todos') || '[]')
   },
   save (data) {
-    localStorage.setItem('vue-todo', JSON.stringify(data))
+    localStorage.setItem('vue-todos', JSON.stringify(data))
   }
 }
 
@@ -17,12 +17,12 @@ const filter = {
     return todos
   },
   active (todos) {
-    return todos.filter((todo) => {
+    return todos.filter(todo => {
       return !todo.complete
     })
   },
   complete (todos) {
-    return todos.filter((todo) => {
+    return todos.filter(todo => {
       return todo.complete
     })
   }
@@ -31,11 +31,7 @@ const filter = {
 export default new Vuex.Store({
   strict: true,
   state: {
-    todos: [
-      { contents: 'todo-content', complete: false },
-      { contents: 'todo-content', complete: true },
-      { contents: 'todo-content', complete: false }
-    ]
+    todos: []
   },
   getters: {
     todoIndex (state) {
@@ -53,8 +49,9 @@ export default new Vuex.Store({
       state.todos.push(data)
       LS.save(state.todos)
     },
-    UPDATE_TODO (state, [index, data]) {
-      state.todos[index] = data
+    UPDATE_TODO (state, { index, data }) {
+      state.todos[index].complete = data.complete
+      state.todos[index].content = data.content
       LS.save(state.todos)
     },
     REMOVE_TODO (state, index) {
@@ -63,8 +60,8 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    INIT_TODOS ({ commit }) {
-      commit('SET_TODOS', LS.load())
+    INIT_TODO ({ commit }) {
+      commit('SET_TODO', LS.load())
     }
   },
   modules: {
