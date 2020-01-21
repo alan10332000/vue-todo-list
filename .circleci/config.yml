@@ -1,6 +1,6 @@
 version: 2.1
 jobs: # 有哪些工作
-  test:
+  build:
     docker:
       - image: circleci/node:latest
     steps:
@@ -8,18 +8,18 @@ jobs: # 有哪些工作
       - restore_cache: # 回復依賴
           key: dependency-cache-{{ checksum "yarn.lock" }}
       - run: # 安裝依賴
-          name: install-package
+          name: Install Dependency
           command: yarn
       - save_cache: # 儲存依賴
           key: dependency-cache-{{ checksum "yarn.lock" }}
           paths:
             - ./node_modules
       - run: # 靜態檢查
-          name: test
-          command: yarn lint && yarn test
+          name: Lint Code
+          command: yarn lint
 
 workflows:
   version: 2
   deploy-workflow: # 部署流程
     jobs: # 哪些 job 是要執行的
-      - test
+      - build
