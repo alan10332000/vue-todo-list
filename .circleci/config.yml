@@ -23,8 +23,6 @@ workflows:
   deploy-workflow: # 部署流程
     jobs: # 哪些 job 是要執行的
       - test: # 測試任務
-          requires:
-            - test # 測試任務
           filters:
             branches:
               only: master # 適用 master
