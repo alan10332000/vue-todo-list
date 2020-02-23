@@ -23,3 +23,21 @@ workflows:
   deploy-workflow: # 部署流程
     jobs: # 哪些 job 是要執行的
       - build
+
+      - generate: # 編譯任務
+          requires:
+            - build # 測試任務
+          filters:
+            branches:
+              only: master # 適用 master
+
+  daily-workflow: # 每日任務
+    triggers:
+      - schedule:
+          cron: '00 23 * * *' # UTC +0 19:30 PM = 隔天 UTC +8 3:30 AM
+          filters:
+            branches:
+              only: master
+
+    jobs:
+      - test
