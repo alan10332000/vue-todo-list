@@ -1,6 +1,6 @@
 version: 2.1
 jobs: # 有哪些工作
-  build:
+  test:
     docker:
       - image: circleci/node:latest
     steps:
@@ -22,11 +22,9 @@ workflows:
   version: 2
   deploy-workflow: # 部署流程
     jobs: # 哪些 job 是要執行的
-      - build
-
-      - generate: # 編譯任務
+      - test: # 測試任務
           requires:
-            - build # 測試任務
+            - test # 測試任務
           filters:
             branches:
               only: master # 適用 master
@@ -40,4 +38,4 @@ workflows:
               only: master
 
     jobs:
-      - build
+      - test
