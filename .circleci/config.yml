@@ -40,4 +40,4 @@ workflows:
               only: master
 
     jobs:
-      - test
+      - build
