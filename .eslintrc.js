@@ -1,17 +1,22 @@
 module.exports = {
-  root: true,
   env: {
+    browser: true,
+    es2020: true,
     node: true
   },
-  'extends': [
+  extends: [
     'plugin:vue/essential',
-    '@vue/standard'
+    'standard'
+  ],
+  parserOptions: {
+    ecmaVersion: 11,
+    sourceType: 'module'
+  },
+  plugins: [
+    'vue'
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
-  },
-  parserOptions: {
-    parser: 'babel-eslint'
   }
 }
