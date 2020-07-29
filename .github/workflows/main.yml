@@ -2,11 +2,12 @@ name: Build and Deploy
 # refs: https://github.com/JamesIves/github-pages-deploy-action
 
 on:
-  [push]
-  #push:
-  # Sequence of patterns matched against refs/heads
-  #tags:
-  #  - 'v[0-9]+.[0-9]+.[0-9]' # Push events to v*.*.* tags
+  push:
+    # Sequence of patterns matched against refs/heads
+    branches:
+      - master # Push events on master branch
+    # tags:
+    #   - 'v[0-9]+.[0-9]+.[0-9]' # Push events to v*.*.* tags
 
 jobs:
   build-and-deploy:
