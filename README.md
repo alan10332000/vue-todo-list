@@ -4,7 +4,7 @@
 
 ## Demo 💻
 
-<https://todo.mailvd.com/>
+<https://todo.alanchou.dev/>
 
 ![image](https://user-images.githubusercontent.com/31372166/88654697-4cfbd880-d100-11ea-9b46-6b81d6898168.png)
 
