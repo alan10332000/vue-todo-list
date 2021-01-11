@@ -34,7 +34,7 @@ html {
 }
 
 .todoInput {
-  margin: 20px auto;
+  margin: 20px 20px 20px 0;
 }
 
 .todoInput input {
@@ -133,4 +133,10 @@ html {
 
 .todoListItem .destroy::after {
   content: 'x';
+}
+
+@media (min-width: 768px) {
+  .todoInput {
+    margin: 20px auto;
+  }
 }
