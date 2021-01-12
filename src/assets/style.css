@@ -96,7 +96,7 @@ html {
   height: 40px;
   display: block;
   line-height: 40px;
-  transition: color 0.4s;
+  transition: color 0.7s;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
