@@ -6,9 +6,13 @@
 
 <https://todo.alanchou.dev/>
 
-![image](https://user-images.githubusercontent.com/31372166/88654697-4cfbd880-d100-11ea-9b46-6b81d6898168.png)
+![image](https://user-images.githubusercontent.com/31372166/104283305-511f8500-54eb-11eb-8bba-c854a3e7fbbd.png)
 
-![image](https://user-images.githubusercontent.com/31372166/88654702-4e2d0580-d100-11ea-9be7-b33f50d9d3a7.png)
+![image](https://user-images.githubusercontent.com/31372166/104283308-5250b200-54eb-11eb-84a5-61b73c9c17cf.png)
+
+![image](https://user-images.githubusercontent.com/31372166/104283312-52e94880-54eb-11eb-8310-b10be6d15ffc.png)
+
+![image](https://user-images.githubusercontent.com/31372166/104283316-5381df00-54eb-11eb-876a-70010e383dbc.png)
 
 ## 簡介 📖
 
@@ -17,12 +21,14 @@
   1. 檢視 [全部＆未完成＆完成] 待辦事項。
 
   2. 可輸入預計要做的待辦事項。
+  
+  3. 可編輯已在清單內的任一待辦事項。
 
-  3. 可刪除已在清單內的任一待辦事項。
+  4. 可刪除已在清單內的任一待辦事項。
 
 ## 使用技術＆練習技術 🚀
 
-- Vue CLI 3
+- Vue
 - Vuex
 - Vue Router
 - Vue Components
@@ -31,6 +37,7 @@
 - Web Storage (Local Storage)
 - Google Analytics
 - CDN Service (Cloudflare)
+- Azure Static Web Apps CI/CD
 
 ## 聲明 ⚠️
 
