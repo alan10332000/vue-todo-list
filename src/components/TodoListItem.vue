@@ -63,7 +63,6 @@ export default {
   methods: {
     editHandler () {
       this.edit = this.todo.content
-      // this.cache = this.todo.content
     },
     destroyHandler () {
       if (confirm(`確認是否刪除 ${this.todo.content} ?`)) {
@@ -71,9 +70,7 @@ export default {
       }
     },
     submitHandler () {
-      if (!this.edit) {
-        this.destroyHandler()
-      }
+      if (!this.edit) return
       this.$store.commit('UPDATE_TODO', {
         index: this.index,
         data: {
