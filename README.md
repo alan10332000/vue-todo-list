@@ -37,7 +37,7 @@
 - Web Storage (Local Storage)
 - Google Analytics
 - CDN Service (Cloudflare)
-- Azure Static Web Apps CI/CD
+- Netlify App CI/CD
 
 ## 聲明 ⚠️
 
